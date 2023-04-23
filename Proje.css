@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;900&display=swap');
+
+*{
+   /* background-color: #BDEDD9;*/
+   background-color: #C0EEE4;
+    margin-left: 0;
+    margin-top: 0;
+}
+body{
+   font-family: 'M PLUS Rounded 1c', sans-serif; 
+}
+.newgrid{
+    width: 80%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 120px 800px 600px;
+}
+.topyazi{
+  /*  background-color:#FF9E9E; */
+    font-size: 40px;
+    text-align: center;
+    grid-column: 1/3;
+}
+.topyazi h2{
+    background-color: #FF9E9E;
+}
+.topresim{
+    display: block;
+    margin-left: auto;
+    margin-right:  auto;
+  /*  background-color: black; */
+    grid-column: 1/3;
+}
+.grid{
+    width: 1200px;
+    height: 670px;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 179px 75px 395px 50px;
+}
+.header {
+    grid-column: 1/3;
+    text-decoration: none;
+    
+} 
+
+.header img{
+    border: 4px solid #FF9E9E;
+}
+.nav{
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 40px ;
+   /* background-color: black; */
+}
+.article{
+   /* background-color: black; */
+    grid-column: 1 ;
+    font-size: 20px;
+}
+.article form{
+    margin-left: 150px;
+}
+.article form input[type=text], select, textarea, input[type=email]{
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #FF9E9E;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 40px;
+}
+.article form input[type=button]{
+    background-color: #FF9E9E;
+    color: white;
+    border-radius: 4px;
+    width: 10%;
+    height: 45px;
+    border-color: #FF9E9E;
+}
+.aside{
+   /* background-color: red;*/
+    grid-column: 2;
+}
+
+.aside img{
+    border: 5px solid #FF9E9E;
+}
+footer{
+    grid-column: 1/3;
+    background-color: black;
+    overflow: hidden;
+   /* position: fixed; */
+    bottom: 0; 
+    width: 100%;
+}
+footer div{
+    width: 100%;
+    text-align: center;
+    height: 100%
+}
+footer > div > a{
+  /*  float: left; */ 
+    display: inline-block;
+    color: #6E68D9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px 12px;
+    background-color: #FF9E9E;
+    
+}
+/*
+.footer{
+    background-color: black;
+    width: 100%;
+    grid-column: 1/3;
+} */
+/*
+.footer div{
+    width: 100%;
+    background-color: red; 
+    height: 100%;
+    
+    text-align: center;
+} */
+
+/*
+.footer >div > a{
+    
+    display: inline-block;
+    color: #6E68D9;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 14px 16px;
+    background-color: #FF9E9E;
+} */
+.footer a:hover{
+    background-color: white;
+    color: black;
+}
+.footer a:active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+   /* background-color: black; */
+    grid-column: 1/3;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+.flex-container > div{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: red;
+  /*  text-align: center; */
+  /*  font-size: 30px; */
+    position: relative;
+}
+
+.image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: absolute; 
+   /* width: 100%; */
+   /* height: 100%; */
+}
+
+.container{
+    
+}
+
+.image:hover{
+    opacity: 0.2;
+}
+
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    width: 100%;
+    height: 100%;
+}
+
+.middle:hover{
+    opacity: 0.9;
+}
+
+.middle > a{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #FF9E9E;
+    color: black;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 600px){
+    .grid{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        grid-template-columns: 75% 25%;
+    }
+}
